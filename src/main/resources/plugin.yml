@@ -1,0 +1,10 @@
+name: Voting
+author: srnyx
+description: Plugin used for GeekSMP's suggestions system.
+
+main: xyz.srnyx.voting.Main
+version: ${version}
+api-version: 1.19
+
+depend:
+  - DiscordSRV
