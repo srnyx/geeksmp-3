@@ -11,7 +11,7 @@ public class DiscordListener {
         final Message message = event.getMessage();
         final String channel = event.getChannel().getId();
 
-        if (channel.equals("1005114492914520206") || channel.equals("1005114534916268032")) {
+        if (channel.equals("1005114534916268032")) {
             message.addReaction("U+1F44D").queue();
             message.addReaction("U+1F44E").queue();
         }
