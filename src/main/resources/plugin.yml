@@ -1,8 +1,8 @@
-name: Voting
+name: GeekSMP3
 author: srnyx
-description: Plugin used for GeekSMP's suggestions system.
+description: Plugin used for GeekSMP's voting system
 
-main: xyz.srnyx.voting.Main
+main: xyz.srnyx.geeksmp3.Main
 version: ${version}
 api-version: 1.19
 
