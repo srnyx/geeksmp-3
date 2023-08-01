@@ -10,10 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public class DiscordListener {
     @Subscribe
     public void onGuildMessageReceive(@NotNull DiscordGuildMessageReceivedEvent event) {
-        if (event.getChannel().getId().equals("1005114534916268032")) {
-            final Message message = event.getMessage();
-            message.addReaction("U+1F44D").queue();
-            message.addReaction("U+1F44E").queue();
-        }
+        if (event.getChannel().getIdLong() != 1005114534916268032L) return;
+        final Message message = event.getMessage();
+        message.addReaction("U+1F44D")
+                .flatMap(v -> message.addReaction("U+1F44E"))
+                .queue();
     }
 }

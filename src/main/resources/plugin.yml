@@ -1,8 +1,10 @@
-name: GeekSMP3
-author: srnyx
-description: Plugin used for GeekSMP's voting system
+name: ${name}
+description: ${description}
+authors:
+  - srnyx
+website: https://srnyx.com
 
-main: xyz.srnyx.geeksmp3.Main
+main: ${group}.geeksmp3.GeekSMP3
 version: ${version}
 api-version: 1.19
 
